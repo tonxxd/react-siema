@@ -1,9 +1,9 @@
-import React, { PureComponent, Component } from 'react';
-import ReactSiema from './lib/ReactSiema';
+import {h, Component} from 'preact';
+import PreactSiema from './lib/PreactSiema';
 import logo from './logo.svg';
 import './App.css';
 
-class Item extends PureComponent {
+class Item extends Component {
     render() {
         return this.props.children;
     }
@@ -38,13 +38,13 @@ class App extends Component {
                         Lightweight and simple carousel wrapper for React based on awesome <a href="https://pawelgrzybek.com/siema/">Siema</a>.
                     </h4>
                     <div className="App-intro__slider">
-                        <ReactSiema ref={(siema) => this.siema = siema} onClick={ this.handleSlideClick }>
+                        <PreactSiema ref={(siema) => this.siema = siema} onClick={ this.handleSlideClick }>
                             { this.state.slides.map((slide, index) => {
                                 return (
                                     <Item key={index}>{slide}</Item>
                                 )
                             }) }
-                        </ReactSiema>
+                        </PreactSiema>
                         <button onClick={() => this.siema.prev()}>Prev</button>
                         <button onClick={() => this.siema.next()}>Next</button>
                     </div>

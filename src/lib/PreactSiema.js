@@ -1,25 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import {h Component } from 'react';
 import debounce from './utils/debounce';
 import transformProperty from './utils/transformProperty';
 
-class ReactSiema extends Component {
-    static propTypes = {
-        resizeDebounce: PropTypes.number,
-        duration: PropTypes.number,
-        easing: PropTypes.string,
-        perPage: PropTypes.number,
-        startIndex: PropTypes.number,
-        draggable: PropTypes.bool,
-        threshold: PropTypes.number,
-        loop: PropTypes.bool,
-        children: PropTypes.oneOfType([
-            PropTypes.element,
-            PropTypes.arrayOf(PropTypes.element)
-        ]),
-        onInit: PropTypes.func,
-        onChange: PropTypes.func,
-    };
+class PreactSiema extends Component {
+    
 
     events = [
         'onTouchStart', 'onTouchEnd', 'onTouchMove', 'onMouseDown', 'onMouseUp', 'onMouseLeave', 'onMouseMove', 'onClick'
@@ -307,4 +291,4 @@ class ReactSiema extends Component {
     }
 }
 
-export default ReactSiema;
+export default PreactSiema;
