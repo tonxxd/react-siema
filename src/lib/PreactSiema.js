@@ -7,11 +7,12 @@ import transformProperty from './utils/transformProperty';
 class PreactSiema extends Component {
     
 
-    events = [
-        'onTouchStart', 'onTouchEnd', 'onTouchMove', 'onMouseDown', 'onMouseUp', 'onMouseLeave', 'onMouseMove', 'onClick'
-    ];
+    
 
     constructor(props) {
+        this.events = [
+            'onTouchStart', 'onTouchEnd', 'onTouchMove', 'onMouseDown', 'onMouseUp', 'onMouseLeave', 'onMouseMove', 'onClick'
+        ]
         super();
         this.config = Object.assign({}, {
             resizeDebounce: 250,
