@@ -1,4 +1,5 @@
-import {h, Component} from 'preact';
+import {h} from 'preact'
+import { Component } from 'preact/compat';
 import PreactSiema from './lib/PreactSiema';
 import logo from './logo.svg';
 import './App.css';

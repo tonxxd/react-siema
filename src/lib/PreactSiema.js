@@ -1,4 +1,6 @@
-import {h Component } from 'react';
+import {h} from 'preact'
+import { Component } from 'preact/compat';
+
 import debounce from './utils/debounce';
 import transformProperty from './utils/transformProperty';
 

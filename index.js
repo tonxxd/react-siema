@@ -1,2 +1,2 @@
-const ReactSiema = require('./build/lib/ReactSiema');
+const ReactSiema = require('./src/lib/PreactSiema');
 module.exports = ReactSiema.default;
